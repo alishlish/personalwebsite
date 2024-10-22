@@ -1,164 +1,111 @@
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400&display=swap');
-
-/* General Body Styling */
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f9f9f9; /* Light background */
-    color: #333333; /* Dark gray text */
-    margin: 0.5em;
-    padding: 2em;
-    line-height: 1.6;
-}
-
-/* Heading Styles */
-h1, h2, h3 {
-    font-family: 'Poppins', sans-serif;
-    color: #59436c; /* Lave */
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-    margin-bottom: .5rem;
-    font-weight: 500;
-    line-height: 1.2;
-}
-
-/* Header Section */
-header {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #e8d1f0; /* Light lilac background */
-    box-shadow: 0 4px 8px rgba(214, 193, 232, 0.2); /* Soft lavender shadow */
-}
-
-header h1 {
-    font-size: 36px;
+/* General Styles */
+* {
     margin: 0;
-    text-align: center;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header p {
-    font-size: 18px;
+body {
+    font-family: 'Arial', sans-serif;
     color: #333;
+    background-color: #f9f9f9;
     text-align: center;
+    padding: 20px;
+}
+
+/* Navigation Bar */
+header nav {
+    background-color: white;
+    padding: 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #7e57c2; /* Lavender tone */
+    text-transform: uppercase;
+}
+
+header nav ul li a:hover {
+    color: #5c36b1; /* Darker lavender */
 }
 
 /* About Section */
-.about {
-    padding: 40px 20px;
-    text-align: center;
+.about-container {
+    margin: 40px auto;
+    max-width: 900px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #D4DCCD;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    font-family: "Afacad Flux", sans-serif;
-    color: #6B717E;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    background-color: #FFE8E1;
-  }
-
-.about h2 {
-    font-size: 28px;
-    color: #c2c6f7; /* Periwinkle */
+.about-container h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
 }
 
-.about p {
-    font-size: 16px;
-    color: #666666; /* Lighter gray for body text */
-    margin: 20px auto;
-    max-width: 700px;
+.about-container p.tagline {
+    font-style: italic;
+    margin: 10px 0;
+    color: #666;
 }
 
-/* Button Styling */
-button {
-    background-color: #d6c1e8; /* Lavender */
-    color: #fff;
-    border: none;
-    border-radius: 12px;
-    padding: 10px 20px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+.about-container .bio {
+    margin-bottom: 20px;
 }
 
-button:hover {
-    background-color: #c2c6f7; /* Periwinkle on hover */
-    transform: scale(1.05); /* Slight hover scale */
+.about-container .profile-pic {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid #7e57c2; /* Match lavender tone */
 }
 
 /* Social Media Icons */
 .icons {
     display: flex;
     justify-content: center;
-    margin: 30px 0;
+    gap: 20px;
+    margin: 20px 0;
 }
 
 .icons a {
-    color: #333333; /* Dark gray */
-    font-size: 0.73em;
-    margin: 0 15px;
-    transition: color 0.3s ease, transform 0.3s ease;
+    color: #333;
+    font-size: 24px;
+    transition: color 0.3s;
 }
 
 .icons a:hover {
-    color: #d6c1e8; /* Lavender hover effect */
-    transform: scale(1.2); /* Slightly larger hover */
+    color: #7e57c2; /* Lavender tone on hover */
+}
+
+#contact p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
 }
 
 /* Footer */
 footer {
-    text-align: center;
-    padding: 20px 0;
+    margin-top: 40px;
+    padding: 10px;
     background-color: #f9f9f9;
-    color: #666666; /* Lighter gray */
-}
-
-/* Box/Section Styling */
-.box {
-    background-color: #fff;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(214, 193, 232, 0.2); /* Lavender shadow */
-}
-
-img {
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  }
-
-/* Media Queries for Responsive Design */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 28px;
-    }
-    
-    header p {
-        font-size: 16px;
-    }
-    
-    .about h2 {
-        font-size: 24px;
-    }
+    border-top: 1px solid #e0e0e0;
+    color: #999;
+    font-size: 12px;
 }
