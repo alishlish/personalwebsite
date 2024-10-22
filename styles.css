@@ -94,11 +94,17 @@ header nav ul li a:hover {
     color: #7e57c2; /* Lavender tone on hover */
 }
 
+#contact {
+    text-align: center;
+}
+
 #contact p {
     margin-top: 10px;
     font-size: 14px;
     color: #666;
+    text-align: center; /* Center the paragraph */
 }
+
 
 /* Footer */
 footer {
