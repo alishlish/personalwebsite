@@ -6,16 +6,23 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #f9f9f9; /* Light background */
     color: #333333; /* Dark gray text */
-    margin: 0;
-    padding: 0;
+    margin: 0.5em;
+    padding: 2em;
     line-height: 1.6;
 }
 
 /* Heading Styles */
 h1, h2, h3 {
     font-family: 'Poppins', sans-serif;
-    color: #d6c1e8; /* Lavender */
+    color: #59436c; /* Lave */
     margin-bottom: 10px;
+    text-align: center;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
 }
 
 /* Header Section */
@@ -29,11 +36,13 @@ header {
 header h1 {
     font-size: 36px;
     margin: 0;
+    text-align: center;
 }
 
 header p {
     font-size: 18px;
     color: #333;
+    text-align: center;
 }
 
 /* About Section */
@@ -41,6 +50,32 @@ header p {
     padding: 40px 20px;
     text-align: center;
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #D4DCCD;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    font-family: "Afacad Flux", sans-serif;
+    color: #6B717E;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #FFE8E1;
+  }
 
 .about h2 {
     font-size: 28px;
@@ -81,7 +116,7 @@ button:hover {
 
 .icons a {
     color: #333333; /* Dark gray */
-    font-size: 24px;
+    font-size: 0.73em;
     margin: 0 15px;
     transition: color 0.3s ease, transform 0.3s ease;
 }
@@ -108,6 +143,10 @@ footer {
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(214, 193, 232, 0.2); /* Lavender shadow */
 }
+
+img {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
 
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
