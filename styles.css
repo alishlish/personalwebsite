@@ -112,3 +112,56 @@ footer {
     color: #999;
     font-size: 12px;
 }
+
+/* Skill bar styles */
+.skills-container {
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: left;
+    padding: 20px;
+}
+
+.skills-container h2 {
+    text-align: center;
+    color: #7e57c2;
+}
+
+.skill-bar {
+    margin-bottom: 20px;
+}
+
+.skill-bar span {
+    font-size: 18px;
+    color: #333;
+}
+
+.progress {
+    width: 100%;
+    background-color: #e0e0e0;
+    height: 25px;
+    border-radius: 12px;
+    margin-top: 5px;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #7e57c2;
+    border-radius: 12px;
+    transition: width 1s ease-in-out;
+}
+
+/* Add animation to the page elements */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about-container, .icons, .skills-container {
+    animation: fadeIn 1s ease-out;
+}
